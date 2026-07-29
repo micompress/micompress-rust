@@ -1,0 +1,19 @@
+[package]
+name = "micompress"
+version = "0.1.0"
+edition = "2021"
+description = "Compress images, PDFs, video, audio, documents & archives via micompress.com"
+license = "MIT"
+homepage = "https://micompress.com"
+repository = "https://github.com/micompress/micompress-rust"
+readme = "README.md"
+keywords = ["compress", "image", "pdf", "cli", "optimize"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "micompress"
+path = "src/main.rs"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking", "multipart", "json"] }
+serde = { version = "1", features = ["derive"] }
