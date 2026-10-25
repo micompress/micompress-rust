@@ -1,6 +1,6 @@
 [package]
 name = "micompress"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Compress images, PDFs, video, audio, documents & archives via micompress.com"
 license = "MIT"
